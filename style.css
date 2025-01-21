@@ -116,10 +116,10 @@
 /* Header Banner Area End */
 .curriculum-area{
     margin-top: 60px;
+    background-image: url("assets/bg.png"); 
 }
 .curriculum-heading > h1{
     text-align: center;
-    background-image: url("assets/bg.png"); 
     font-size: 2.875rem;
     font-family: "Quicksand", serif;
 }
@@ -246,13 +246,14 @@
 /* Curriculum Section Style End */
 
 .stories-section{
-    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: url("assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
     padding: 60px;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
 }
 
 .stories-heading > h1{
     text-align: center;
-    background-image: url("assets/bg.png"); 
     font-size: 2.875rem;
     font-family: "Quicksand", serif;
     margin-top: 60px;
@@ -526,15 +527,16 @@
     .image-box-area{
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .image-box-area{
-        width: 100%;
+        max-width: 100%;
         justify-content: center;
     }
 
     .stories-section{
-        padding: 40px;
+        padding-bottom: 60px;
     }
     .stories-btn-v2{
         top: -25px;
