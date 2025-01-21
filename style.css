@@ -267,7 +267,7 @@
 }
 
 .big-box{
-    width: 50%;
+    max-width: 50%;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -373,7 +373,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 50%;
+    max-width: 50%;
 }
 
 .view-btn{
@@ -390,12 +390,100 @@
     text-align: center;
     margin-top: 80px;
 }
+/* Stories Section End */
+
+.footer-box{
+    background-color: #01ACFD;
+}
+.footer-container{
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    color: #fff;
+    padding: 120px;
+    font-family: "Quicksand", serif;
+    align-items: flex-start;
+}
+
+.footer-content{
+    max-width: 33%;
+}
+
+.footer-menu{
+    max-width: 33%;
+}
+
+.footer-social-icon{
+    max-width: 33%;
+}
+
+.footer-logo{
+    display: inline-block;
+}
+
+.footer-logo img{
+    /* max-width: 100%; */
+    width: 80px;
+}
+
+.kids-education{
+    display: inline-block;
+    font-size: 2.625rem;
+    line-height: 40px;
+}
+
+.kids-description{
+    font-size: 1.25rem;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+.kids-about{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-touch{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.footer-menu ul{
+    margin-top: 32px;
+}
+.footer-item{
+    margin-top: 20px;
+    list-style-type: none;
+}
+.footer-link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.icon-container{
+    margin-top: 32px;
+}
+
+.icon-container img{
+    max-width: 100%;
+    margin-left: 10px;
+}
 
 /* Responsive area style */
 
 @media screen and (max-width: 576px) {
     .header-container{
-
+        
+    }
+    .header-menu-section{
+        border-bottom: 1px solid #FEA301;
+    }
+    .brand-name{
+        display: none;
     }
     .menu-items{
         display: none;
@@ -432,32 +520,71 @@
     .big-box{
         display: none;
     }
+    .content-container{
+        padding: 10px;
+    }
     .image-box-area{
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
     }
 
     .image-box-area{
         width: 100%;
         justify-content: center;
     }
+
+    .stories-section{
+        padding: 40px;
+    }
     .stories-btn-v2{
-        top: -15px;
+        top: -25px;
         padding: 6px 10px 6px 10px;
         font-size: 0.563rem;
     }
     .stories-btn-v3{
-        top: -15px;
+        top: -25px;
         padding: 6px 10px 6px 10px;
         font-size: 0.563rem;
     }
     .stories-btn-v4{
-        top: -15px;
+        top: -25px;
         padding: 6px 10px 6px 10px;
         font-size: 0.563rem;
     }
     .stories-btn-v5{
-        top: -15px;
+        top: -25px;
         padding: 6px 10px 6px 10px;
         font-size: 0.563rem;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 5px;
+        gap: 32px;
+        /* margin: 0 auto; */
+    }
+
+    .footer-content{
+        max-width: 100%;
+        padding-top: 65px;
+    }
+    
+    .footer-menu{
+        max-width: 100%;
+    }
+    
+    .footer-social-icon{
+        max-width: 100%;
+    }
+    .footer-touch{
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: left;
+    }
+    .icon-container{
+        margin-top: 36px;
+        margin-bottom: 60px;
+    }
+    .icon-container img{
+        margin: 0;
     }
 }
